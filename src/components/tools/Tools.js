@@ -11,7 +11,7 @@ export default function Tools(props) {
           return (
             <div key={tool.name} className="col-lg-4 mt-5 text-center">
               <img
-                src={require(`../../assets/images/${tool.imageName}`)}
+                src={require(`../../assets/images/tools/${tool.imageName}`)}
                 className="card-img-top"
                 alt="not available"
                 style={{ minHeight: "160px" }}
