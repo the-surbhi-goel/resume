@@ -2,12 +2,11 @@ import React from "react";
 import NAV_CATEGORY from "../../constants/NavCategory";
 import NavbarItem from "./NavbarItem";
 import PropTypes from "prop-types";
+import "./Navbar.css";
 
 export default function Navbar(props) {
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-${props.theme.mode} bg-${props.theme.mode}`}
-    >
+    <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.theme.mode} bg-${props.theme.mode}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Surbhi Goel
@@ -36,13 +35,9 @@ export default function Navbar(props) {
           </ul>
 
           {/* Right Navbar */}
-          {/* <div className="d-flex  justify-content-between">
-            <div
-              className={`form-check form-switch text-${props.theme.text}`}
-              style={{
-                paddingTop: "8px",
-              }}
-            >
+          <div className="d-flex justify-content-between right-navbar">
+            <div className="pe-1">🌞</div>
+            <div className={`form-check form-switch text-${props.theme.text}`}>
               <input
                 className={`form-check-input form-check-input-${props.theme.button}`}
                 type="checkbox"
@@ -50,11 +45,9 @@ export default function Navbar(props) {
                 id="flexSwitchCheckChecked"
                 onClick={props.changeTheme}
               />
-              <label className="form-check-label" htmlFor="flexSwitchCheckChecked">
-                Toggle Mode
-              </label>
             </div>
-          </div> */}
+            <div>🌙</div>
+          </div>
         </div>
       </div>
     </nav>
@@ -62,5 +55,5 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-    theme: PropTypes.object
-}
+  theme: PropTypes.object,
+};

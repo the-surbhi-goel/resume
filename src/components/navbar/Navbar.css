@@ -1,0 +1,12 @@
+.right-navbar {
+    align-items: center;
+}
+
+.form-check-input {
+  width: 40px;
+}
+
+.form-check-input-success:checked {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
