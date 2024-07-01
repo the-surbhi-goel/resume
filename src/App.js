@@ -8,6 +8,7 @@ import Skills from "./components/skills/Skills";
 import Companies from "./components/companies/Companies";
 import Education from "./components/education/Education";
 import Tools from "./components/tools/Tools";
+import OperatingSystem from "./components/os/OperatingSystem";
 
 function App() {
   const [theme, setTheme] = useState({
@@ -44,6 +45,7 @@ function App() {
           <Route exact path="/companies" element={<Companies />} />
           <Route exact path="/education" element={<Education />} />
           <Route exact path="/tools" element={<Tools theme={theme} />} />
+          <Route exact path="/operating-system" element={<OperatingSystem theme={theme} />} />
         </Routes>
       </div>
     </HashRouter>

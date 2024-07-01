@@ -3,6 +3,7 @@ const NAV_CATEGORY = [
     "companies",
     "education",
     "tools",
+    "operating-system"
 ];
   
   export default NAV_CATEGORY;
