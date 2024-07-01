@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TOOLS from "../../constants/ToolList";
-import "./Tools.css";
+import ImageWithName from "../common/ImageWithName";
 
 export default function Tools(props) {
   return (
@@ -10,13 +10,11 @@ export default function Tools(props) {
         {TOOLS.map((tool) => {
           return (
             <div key={tool.name} className="col-lg-4 mt-5 text-center">
-              <img
-                src={require(`../../assets/images/tools/${tool.imageName}`)}
-                className="card-img-top"
-                alt="not available"
-                style={{ minHeight: "160px" }}
+              <ImageWithName
+                theme={props.theme}
+                name={tool.name}
+                imageName={require(`../../assets/images/tools/${tool.imageName}`)}
               />
-              <h2 className={`mt-3 text-${props.theme.text}`}>{tool.name}</h2>
             </div>
           );
         })}

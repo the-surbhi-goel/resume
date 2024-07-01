@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import OS from "../../constants/OSList";
-import "./OperatingSystem.css";
+import ImageWithName from "../common/ImageWithName";
 
 export default function OperatingSystem(props) {
   return (
@@ -11,13 +11,11 @@ export default function OperatingSystem(props) {
         {OS.map((os) => {
           return (
             <div key={os.name} className="col-lg-4 mt-5 text-center">
-              <img
-                src={require(`../../assets/images/os/${os.imageName}`)}
-                className="card-img-top"
-                alt="not available"
-                style={{ minHeight: "160px" }}
+              <ImageWithName
+                theme={props.theme}
+                name={os.name}
+                imageName={require(`../../assets/images/os/${os.imageName}`)}
               />
-              <h2 className={`mt-3 text-${props.theme.text}`}>{os.name}</h2>
             </div>
           );
         })}

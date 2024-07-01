@@ -1,6 +1,6 @@
 import React from "react";
 import NAV_CATEGORY from "../../constants/NavCategory";
-import NavbarItem from "./NavbarItem";
+import NavbarItem from "../common/NavbarItem";
 import PropTypes from "prop-types";
 import "./Navbar.css";
 
