@@ -31,7 +31,7 @@ export default function Education() {
       {eduList.length > 0 && (
         <div className="timeline-container">
           {eduList.map((data, idx) => (
-            <TimelineItem data={data} key={idx} />
+            <TimelineItem singleItem={false} data={data} key={idx} />
           ))}
         </div>
       )}

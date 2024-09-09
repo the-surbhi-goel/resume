@@ -1,0 +1,16 @@
+.company-container {
+  position: relative;
+}
+
+.multi-company {
+  width: 70%;
+}
+
+.selected-company {
+  width: 40%;
+  position: fixed;
+  right: 15px;
+  top:0;
+  bottom: 10px;
+  overflow-y: auto;
+}
