@@ -10,7 +10,7 @@ export default function OperatingSystem(props) {
         <div className="col-lg-2"></div>
         {OS.map((os) => {
           return (
-            <div key={os.name} className="col-lg-4 mt-5 text-center">
+            <div key={os.name} className="col-lg-4 col-6 mt-5 text-center">
               <ImageWithName
                 theme={props.theme}
                 name={os.name}

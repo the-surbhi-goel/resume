@@ -9,7 +9,7 @@ export default function Tools(props) {
       <div className="row">
         {TOOLS.map((tool) => {
           return (
-            <div key={tool.name} className="col-lg-4 mt-5 text-center">
+            <div key={tool.name} className="col-lg-4 col-6 mt-5 text-center">
               <ImageWithName
                 theme={props.theme}
                 name={tool.name}
