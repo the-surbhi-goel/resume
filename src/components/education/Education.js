@@ -2,7 +2,7 @@ import React from "react";
 import TimelineItem from "../common/TimelineItem";
 import "../common/TimelineItem.css";
 
-export default function Education() {
+export default function Education(props) {
   const eduList = [
     {
       text: "M.M. University (Mullana)",
@@ -12,7 +12,7 @@ export default function Education() {
       category: {
         tag: "B.Tech CSE",
         color: "#018f69",
-      }
+      },
     },
     {
       text: "M.M. University (Mullana)",
@@ -22,16 +22,16 @@ export default function Education() {
       category: {
         tag: "Diploma CSE",
         color: "#018f69",
-      }
+      },
     },
   ];
 
   return (
     <>
       {eduList.length > 0 && (
-        <div className="timeline-container">
+        <div className={`timeline-container ${props.theme.mode}-container`}>
           {eduList.map((data, idx) => (
-            <TimelineItem singleItem={false} data={data} key={idx} />
+            <TimelineItem theme={props.theme} singleItem={false} data={data} key={idx} />
           ))}
         </div>
       )}

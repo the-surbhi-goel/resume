@@ -8,14 +8,15 @@ TimelineItem.prototype = {
 };
 
 export default function TimelineItem(props) {
-  const { data, readLess, readMore, singleItem } = props;
+  const { data, readLess, readMore, singleItem, theme } = props;
 
   return (
     <div
-      className={"timeline-item " + (singleItem ? "single-timeline-item" : "")}
+      // className={`mt-3 text-${props.theme.text}`}
+      className={`timeline-item ` + (singleItem ? "single-timeline-item" : "")}
       style={{ width: props.width }}
     >
-      <div className="timeline-item-content">
+      <div className={`timeline-item-content bg-${theme.mode} text-${theme.text}`}>
         <span className="tag" style={{ background: data.category.color }}>
           {data.category.tag}
         </span>

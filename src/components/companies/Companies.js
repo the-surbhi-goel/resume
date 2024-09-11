@@ -4,7 +4,7 @@ import TimelineItem from "../common/TimelineItem";
 import "../common/TimelineItem.css";
 import "./companies.css";
 
-export default function Companies() {
+export default function Companies(props) {
   const [selectedCompany, setSelectedCompany] = useState(null);
 
   const readMore = (data) => {
@@ -16,14 +16,21 @@ export default function Companies() {
     <>
       {COMPANY_LIST.length > 0 && (
         <div className="company-container">
-          <div className={"timeline-container " + (selectedCompany ? "multi-company" : "w-100")}>
+          <div className={`timeline-container ${props.theme.mode}-container ` + (selectedCompany ? "multi-company" : "w-100")}>
             {COMPANY_LIST.map((data, idx) => (
-              <TimelineItem singleItem={false} readMore={readMore} data={data} key={idx} />
+              <TimelineItem
+                theme={props.theme}
+                singleItem={false}
+                readMore={readMore}
+                data={data}
+                key={idx}
+              />
             ))}
           </div>
           {selectedCompany && (
             <div className="selected-company">
               <TimelineItem
+                theme={props.theme}
                 singleItem={true}
                 data={selectedCompany}
                 readLess={() => {
