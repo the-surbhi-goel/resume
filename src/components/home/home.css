@@ -1,0 +1,29 @@
+.mt-70 {
+  margin-top: 70px;
+}
+
+.contact-no {
+  margin-top: 10px;
+}
+
+p {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.profile-img {
+  border: 1px dotted black;
+  margin: 10px 25px 15px 20px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.icon-img {
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+a {
+  color: #3a30ca;
+}

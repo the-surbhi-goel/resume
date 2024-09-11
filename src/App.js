@@ -40,7 +40,7 @@ function App() {
       <Navbar theme={theme} changeTheme={changeTheme} />
       <div className="container">
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home theme={theme} />} />
           <Route exact path="/skills" element={<Skills theme={theme} />} />
           <Route exact path="/companies" element={<Companies theme={theme} />} />
           <Route exact path="/education" element={<Education theme={theme} />} />
