@@ -3,10 +3,10 @@ const COMPANY_LIST = [
     id: 1,
     text: "Momentum Metropolitan Services Private Limited",
     text2:
-      "Technology: Angular, Angular Material, Angular Flex Layout, Bootstrap, Typescript, SCSS, HTML, Rest API, JIRA, Lens, GIT",
+      "Technology: ReactJs, Angular, Angular Material, Angular Flex Layout, Bootstrap, Typescript, SCSS, HTML, Rest API, JIRA, Lens, GIT",
     date: "July 22 - current",
     category: {
-      tag: "Angular Developer",
+      tag: "Software Developer",
       color: "#018f69",
     },
     link: {
