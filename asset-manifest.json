@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.26125b80.css",
+    "main.js": "/resume/static/js/main.bee22720.js",
+    "static/js/453.f19e9853.chunk.js": "/resume/static/js/453.f19e9853.chunk.js",
+    "static/media/mac.png": "/resume/static/media/mac.836fda6b184301622546.png",
+    "static/media/webstorm.png": "/resume/static/media/webstorm.412a2dec9dcfe23dcf2b.png",
+    "static/media/profile.jpeg": "/resume/static/media/profile.1823f34793a9589597c9.jpeg",
+    "static/media/netbeans.png": "/resume/static/media/netbeans.c3f70b6e1c6114512828.png",
+    "static/media/github.png": "/resume/static/media/github.237e2214562c441f67b2.png",
+    "static/media/postman.png": "/resume/static/media/postman.cf45581b1f66fbd2d084.png",
+    "static/media/sublime.png": "/resume/static/media/sublime.ecc3be255a2515ad6f30.png",
+    "static/media/vscode.png": "/resume/static/media/vscode.39f8de97f2ae4a5fa507.png",
+    "static/media/jquery.svg": "/resume/static/media/jquery.429008ec422ddc576549.svg",
+    "static/media/sass.svg": "/resume/static/media/sass.8aa78a8393470431c803.svg",
+    "static/media/react.svg": "/resume/static/media/react.e68b35f4774979ae220b.svg",
+    "static/media/bootstrap.svg": "/resume/static/media/bootstrap.997c463dca63c915b9a5.svg",
+    "static/media/typescript.svg": "/resume/static/media/typescript.22b4f22ec3ee32c08fb2.svg",
+    "index.html": "/resume/index.html",
+    "static/media/angular.svg": "/resume/static/media/angular.28ae4f3c6c193d04113e.svg",
+    "static/media/css.svg": "/resume/static/media/css.4e47c3122b8d2476a02f.svg",
+    "static/media/html.svg": "/resume/static/media/html.f318c8b1d5945fa9adc8.svg",
+    "static/media/javascript.svg": "/resume/static/media/javascript.b879f838faf1cb951d1c.svg",
+    "main.26125b80.css.map": "/resume/static/css/main.26125b80.css.map",
+    "main.bee22720.js.map": "/resume/static/js/main.bee22720.js.map",
+    "453.f19e9853.chunk.js.map": "/resume/static/js/453.f19e9853.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26125b80.css",
+    "static/js/main.bee22720.js"
+  ]
+}
