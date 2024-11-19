@@ -3,14 +3,20 @@ import NAV_CATEGORY from "../../constants/NavCategory";
 import NavbarItem from "../common/NavbarItem";
 import PropTypes from "prop-types";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.theme.mode} bg-${props.theme.mode}`}>
+    <nav
+      className={`navbar fixed-top navbar-expand-lg navbar-${props.theme.mode} bg-${props.theme.mode}`}
+    >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        {/* <a className="navbar-brand" href="/">
           Surbhi Goel
-        </a>
+        </a> */}
+        <NavLink to="/personal-info" className="navbar-brand">
+          Surbhi Goel
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
